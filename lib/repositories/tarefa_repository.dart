@@ -23,10 +23,11 @@ class TarefaRepository {
           descricao: map['descricao'] as String,
           dataInicio: map['dataInicio'] as String,
           dataFim: map['dataFim'] as String,
-    }).toList();
+      );}).toList();
+
   }
 
-  Future<void> updateDog(Tarefa tarefa) async {
+  Future<void> updatetarefa(Tarefa tarefa) async {
     final db = await DatabaseHelper.initDb();
     await db.update(
       'tarefa',
